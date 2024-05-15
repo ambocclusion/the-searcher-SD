@@ -11,12 +11,14 @@ here are some examples:
 `a photo of jim carrey from liar liar riding on a roller coaster, excitement, motion blur, trending on artstation`
 
 without:
+
 <img alt="output0_no_files.png" src="assets%2Foutput0_no_files.png" width="200"/>
 <img alt="output1_no_files.png" src="assets%2Foutput1_no_files.png" width="200"/>
 <img alt="output2_no_files.png" src="assets%2Foutput2_no_files.png" width="200"/>
 <img alt="output3_no_files.png" src="assets%2Foutput3_no_files.png" width="200"/>
 
 with
+
 <img alt="output0_.png" src="assets%2Foutput0_.png" width="200"/>
 <img alt="output1_.png" src="assets%2Foutput1_.png" width="200"/>
 <img alt="output2_.png" src="assets%2Foutput2_.png" width="200"/>
