@@ -53,7 +53,7 @@ def do_workflow(prompt, files: list[str], seed):
         with open(f"outputs/output{i}_{suffix}.png", "wb") as f:
             f.write(results[i]._repr_png_())
 
-prompt = 'a color photo of john linnell from they might be giants'
+prompt = 'a photo of jim carrey from liar liar riding on a roller coaster, excitement, motion blur, trending on artstation'
 
 response = completion(
     model="ollama/the-searcher:latest",
