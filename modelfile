@@ -1,0 +1,40 @@
+FROM dolphin-llama3:latest
+SYSTEM """you are a gpt tasked with taking a stable diffusion prompt and breaking it down into several web-searchable queries in json array format. please only include the main subjects of the prompt. limit yourself to two subjects. for example:
+
+```user:
+a photo of weird al yankovic playing on a baseball field lit by spotlights, trending photo, dslr, best quality
+
+assistant:
+[
+    "weird al yankovic playing a concert",
+    "baseball field lit by spotlights"
+]```
+
+given the following prompt, split it into each separate subject that you can search for images of on the web, respond with a json array:"""
+
+TEMPLATE """
+### System:
+{{ .System }}
+
+### User:
+{{ .Prompt }}
+
+### Response:
+"""
+
+PARAMETER num_ctx 16000
+PARAMETER temperature 1.1
+PARAMETER top_p .8
+PARAMETER top_k 100
+PARAMETER repeat_penalty 1.08
+PARAMETER repeat_last_n 2048
+PARAMETER mirostat 0
+PARAMETER mirostat_eta 0.1
+PARAMETER mirostat_tau 4
+
+PARAMETER stop ### Response:
+PARAMETER stop ### User:
+PARAMETER stop \n
+PARAMETER stop <|eot_id|>
+PARAMETER stop <|im_end|>
+PARAMETER stop System:
