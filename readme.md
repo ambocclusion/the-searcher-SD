@@ -1,6 +1,6 @@
 # THE SEARCHER
 
-ok this is not anything super special but I had an idea I wanted to get out of my head
+ok this is not anything super special but I had an idea I wanted to get out of my head. take this as a bit of an experiment.
 
 this script will use an llm to break the prompt down into a list consisting of the main subject and any other concepts. it'll then do a search on duckduckgo for an image of the subject and feed that into stable diffusion using a mixture of ipadapter and unclip. this will enhance the likeness slightly. I can see ways this could be improved in the future but I wanted to see what kind of gains could be had with this method.
 
